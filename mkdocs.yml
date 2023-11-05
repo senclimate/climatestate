@@ -1,0 +1,112 @@
+site_name: ClimateState
+# site_url: http://www.jieyu.ai
+repo_url: https://github.com/senclimate/climatestate
+repo_name: climatestate
+#strict: true
+nav:
+  - Home: index.md
+  - Climatology:
+      - 'Sea surface temperature': Clim_sst_map.md
+      - 'Surface wind and currents': Clim_winds_map.md
+  - Variability:
+      - 'ENSO': ENSO.md
+      - 'Indian Ocean Dipole': IOD.md
+      - 'Pacific Decadal Oscillation': IOD.md
+  - Climate Change:
+      - 'Global mean temperature': global_mean_temperature.md
+theme:
+  name: material
+  language: en
+  #logo: assets/logo.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.indexes
+    - navigation.tabs
+    - navigation.instant
+    - navigation.tabs.sticky
+    - navigation.expand
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+  extensions:
+    - material.extensions.emoji.twemoji
+  font:
+    text: Roboto
+    code: Source Code Pro
+markdown_extensions:
+  - markdown.extensions.attr_list
+  - markdown.extensions.def_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed
+  - pymdownx.betterem
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      use_pygments: true
+      pygments_style: monokai
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+  - toc:
+      baselevel: 2
+      permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
+  - meta
+plugins:
+  - include-markdown
+  - search:
+      lang: en
+  - mkdocstrings:
+      watch:
+        - climatestate
+  - tags
+
+extra:
+  # version:
+  #   provider: mike
+  social:
+    # - icon: fontawesome/brands/twitter
+    #   # replace with your own tweet link below
+    #   link: http://www.jieyu.ai
+    #   name: Tweet
+    # - icon: fontawesome/brands/facebook
+    #   # replace with your own facebook link below
+    #   link: http://www.jieyu.ai
+    #   name: Facebook
+    - icon: fontawesome/brands/github
+      link: https://github.com/senclimate/climatestate
+      name: Github
+    - icon: material/email
+      link: "mailto:zhaos2016@gmail.com"
+  # to enable disqus, uncomment the following and put your disqus id below
+  # disqus: disqus_id
+# uncomment the following and put your google tracking id below to enable GA
+#google_analytics:
+  #- UA-xxx
+  #- auto
+copyright: Copyright &copy; 2023 Sen Zhao
+
+extra_css:
+  - css/custom.css
