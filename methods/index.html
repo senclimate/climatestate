@@ -13,7 +13,7 @@
     
     
       
-        <title>Climatology - ClimateState</title>
+        <title>Methods - ClimateState</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#winds" class="md-skip">
+        <a href="#outlines" class="md-skip">
           Skip to content
         </a>
       
@@ -105,7 +105,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Climatology
+              Methods
             
           </span>
         </div>
@@ -207,10 +207,12 @@
         
   
   
+    
+  
 
 
   <li class="md-tabs__item">
-    <a href="../methods/" class="md-tabs__link">
+    <a href="./" class="md-tabs__link md-tabs__link--active">
       Methods
     </a>
   </li>
@@ -335,11 +337,62 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../methods/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Methods
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Methods
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#outlines" class="md-nav__link">
+    Outlines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#datasets" class="md-nav__link">
+    Datasets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-processing" class="md-nav__link">
+    Data Processing
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -589,15 +642,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#winds" class="md-nav__link">
-    winds
+  <a href="#outlines" class="md-nav__link">
+    Outlines
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sst" class="md-nav__link">
-    SST
+  <a href="#datasets" class="md-nav__link">
+    Datasets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-processing" class="md-nav__link">
+    Data Processing
   </a>
   
 </li>
@@ -619,16 +679,62 @@
 
 
 
-  <a href="https://github.com/senclimate/climatestate/edit/master/docs/climatology.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/senclimate/climatestate/edit/master/docs/methods.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-  <h1>Climatology</h1>
+  <h1>Methods</h1>
 
-<h2 id="winds">winds<a class="headerlink" href="#winds" title="Permanent link">&para;</a></h2>
-<h2 id="sst">SST<a class="headerlink" href="#sst" title="Permanent link">&para;</a></h2>
+<h2 id="outlines">Outlines<a class="headerlink" href="#outlines" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Climatologies<ul>
+<li><a href="../Clim_sst_map">SST</a></li>
+<li><a href="../Clim_sst_map">SST</a></li>
+</ul>
+</li>
+<li>Modes of Variability<ul>
+<li>ENSO ()</li>
+<li>Indian Ocean Dipole</li>
+<li>Atlantic Nino</li>
+<li></li>
+</ul>
+</li>
+<li>Climate Change</li>
+</ul>
+<h2 id="datasets">Datasets<a class="headerlink" href="#datasets" title="Permanent link">&para;</a></h2>
+<p>Monthly gridded observation/reanalysis datasets were used and listed as follows</p>
+<ul>
+<li>
+<p>Sea surface temperature (SST)</p>
+<ul>
+<li>
+<p>NOAA Extended Reconstructed Sea Surface Temperature (ERSST) V5 obtained from <a href="https://psl.noaa.gov/data/gridded/data.noaa.ersst.v5.html">https://psl.noaa.gov/data/gridded/data.noaa.ersst.v5.html</a></p>
+</li>
+<li>
+<p>HadISST obtained from <a href="https://www.metoffice.gov.uk/hadobs/hadisst/">https://www.metoffice.gov.uk/hadobs/hadisst/</a></p>
+</li>
+<li>
+<p>COBE SST obtained from <a href="https://psl.noaa.gov/data/gridded/data.cobe.html">https://psl.noaa.gov/data/gridded/data.cobe.html</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Precipitation</p>
+</li>
+<li>
+<p>CPC Merged Analysis of Precipitation (CMAP) obtained from <a href="https://psl.noaa.gov/data/gridded/data.cmap.html">https://psl.noaa.gov/data/gridded/data.cmap.html</a></p>
+</li>
+<li>
+<p>ERA5 reanalysis</p>
+</li>
+<li>
+<p>ORAS5 ocean reanalysis</p>
+</li>
+</ul>
+<h2 id="data-processing">Data Processing<a class="headerlink" href="#data-processing" title="Permanent link">&para;</a></h2>
+<p>All the climatology is calculated using the period of 1991-2020, unless specifically stated otherwise.</p>
 
 
 
@@ -644,6 +750,27 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Home
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
